@@ -1,0 +1,310 @@
+.twitter-section {
+  width: 100%;
+  background-image: url('../assets/yellow-bg.png');
+}
+
+.twitter-container {
+  padding-top: 42px;
+  padding-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 279px);
+  height: 445px;
+}
+
+.lorem-box {
+  width: 656px;
+  height: 387px;
+}
+
+.lorem-heading {
+  color: white;
+  font-size: 37px;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.lorem-double {
+  display: flex;
+  margin-top: 40px;
+}
+
+.lorem-double > div {
+  width: 50%;
+  height: 233px;
+  position: relative;
+}
+
+.lorem-par {
+  background-color: #ec9e03;
+  padding: 25px 38px 34px 31px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 29px;
+  text-align: left;
+  font-weight: 100;
+  color: white;
+}
+
+.plus-button,
+.twitter-box > button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.plus-button:hover,
+.twitter-box > button:hover {
+  transform: scale(200%);
+  transition: 0.3s all;
+}
+
+.lorem-video {
+  background-image: url('../assets/monkey-guy.png');
+  background-position-x: -35px;
+}
+
+.lorem-start-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5c506;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calendar {
+  width: 113px;
+  height: 86px;
+  background-color: #c78e01;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.calendar > .number {
+  font-size: 41px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.calendar > .month {
+  color: #b26529;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 21px;
+}
+
+.chat {
+  display: none;
+}
+
+.twitter-box {
+  position: relative;
+  width: 329px;
+  height: 233px;
+  background-color: #ec9e03;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -18px;
+}
+
+.twitter-box > span,
+.twitter-box > button {
+  position: absolute;
+}
+
+.twitter-box > span {
+  top: 20px;
+  right: 19px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 25px;
+}
+
+.slidecontainer {
+  width: 897px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.slider {
+  height: 16px;
+  appearance: none;
+  width: 100%;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  border-radius: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+  height: 16px;
+  appearance: none;
+  width: 198px;
+  background: #ec9e03;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+@media (max-width: 640px) {
+  .twitter-container {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .twitter-section {
+    background: none;
+  }
+
+  .lorem-par {
+    font-size: 25px;
+  }
+
+  .slidecontainer,
+  .calendar,
+  .twitter-box > span,
+  .twitter-box > button {
+    display: none;
+  }
+
+  .lorem-double {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .lorem-double > div {
+    width: 44%;
+  }
+
+  .lorem-par {
+    padding: 22px 38px 21px 26px;
+  }
+
+  .twitter-box {
+    background-color: #f5c507;
+    width: 100%;
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 233px;
+    padding-top: 23px;
+    padding-bottom: 50px;
+  }
+
+  .twitter-box > img {
+    margin-top: 36px;
+    margin-bottom: 29px;
+  }
+  .chat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat > div {
+    margin-bottom: 13px;
+  }
+
+  .chat > div:nth-child(2) {
+    opacity: 0.7;
+  }
+
+  .chat > div:nth-child(3) {
+    opacity: 0.6;
+  }
+
+  .bubble {
+    position: relative;
+    background: #ffffff;
+    color: #8f8e8e;
+    font-family: Arial;
+    font-size: 13px;
+    text-align: center;
+    width: 285px;
+    height: 43px;
+    border-radius: 10px;
+    padding: 10px 40px 5px 28px;
+  }
+  .bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: transparent #ffffff;
+    border-width: 7px 9px 7px 0;
+    top: 63%;
+    left: -9px;
+    margin-top: -7px;
+  }
+
+  .chat > form {
+    width: 285px;
+    position: relative;
+  }
+
+  .chat > form > input {
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #c78e01;
+  }
+
+  .chat > form > button {
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #c78e01;
+    background-color: #ec9e03;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 630px) {
+  .twitter-box > img {
+    display: none;
+  }
+
+  .lorem-video {
+    display: none;
+  }
+
+  .lorem-par {
+    flex-basis: 100vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .twitter-box {
+    margin-top: 0px;
+    padding-top: 0;
+  }
+
+  .chat {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+.banner > img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 566px;
+}
+
+.header > nav > ul > li > a {
+  color: #9b7d08;
+  text-decoration: none;
+}
+
+.header > * {
+  cursor: pointer;
+}
+
+.header {
+  padding: 0 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin-top: 29px;
+}
+
+.header-logo {
+  width: 318px;
+  display: flex;
+  align-items: center;
+}
+
+.header-heading {
+  width: min-content;
+  text-transform: uppercase;
+  font-size: 41px;
+  color: #ffffff;
+  margin-left: 11px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: lighter;
+}
+
+.header-nav {
+  display: flex;
+  align-self: flex-end;
+}
+
+.header-list {
+  width: 454px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  background-color: #f5c506;
+  box-shadow: -4px -4px 0px 0px rgba(245, 197, 6, 0.27),
+    -8px -8px 0px 0px rgba(245, 197, 6, 0.27);
+}
+
+.list-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #9b7d08;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list-item:hover {
+  opacity: 0.6;
+}
+
+.list-item > img {
+  margin-right: 9px;
+}
+
+.border-right {
+  padding-right: 22px;
+  border-right: 1px solid #9b7d08;
+}
+
+@media (max-width: 640px) {
+  .banner {
+    display: none;
+  }
+
+  .border-right {
+    padding-right: 10px;
+  }
+
+  .header {
+    padding: 0;
+    background-color: #ccc;
+    margin-top: 0;
+    height: 62px;
+  }
+
+  .header-heading {
+    font-size: 22px;
+  }
+
+  .header-logo {
+    width: 30vw;
+    height: 100%;
+    background-color: #555555;
+    padding: 9px 18px 10px 10px;
+  }
+
+  .header-logo > img {
+    width: 39px;
+    height: 38px;
+  }
+
+  .header-nav {
+    width: 70vw;
+    height: 62px;
+    align-self: center;
+    position: relative;
+  }
+
+  .header-list {
+    position: absolute;
+    box-shadow: none;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .icon {
+    display: none;
+  }
+
+  .header-list {
+    justify-content: space-around;
+  }
+
+  .list-item {
+    font-size: 12px;
+  }
+
+  .border-right {
+    padding-right: 20px;
+  }
+
+  .header-heading {
+    font-size: 13px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 386px) {
+  .header-heading {
+    display: none;
+  }
+
+  .header-logo {
+    justify-content: center;
+  }
+}

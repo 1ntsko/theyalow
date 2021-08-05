@@ -1,0 +1,62 @@
+.icons-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 212px;
+}
+
+.icons-area > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-area > div:nth-child(1),
+.icons-area > div:nth-child(3) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.icons-area > div > span {
+  font-size: 27px;
+  line-height: 21px;
+  margin-top: 18px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.icons-area > div > img:hover {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .icons-area {
+    grid-template-rows: 174px;
+  }
+
+  .icons-area > div:nth-child(1),
+  .icons-area > div:nth-child(3) {
+    border: none;
+  }
+
+  .icons-area > div > span {
+    font-size: 23px;
+  }
+
+  .icons-area > div > img {
+    width: 90px;
+    height: 62px;
+  }
+}
+
+@media (max-width: 488px) {
+  .icons-area > div > span {
+    font-size: 16px;
+  }
+  .icons-area > div > img {
+    width: 50px;
+    height: 50px;
+  }
+}
